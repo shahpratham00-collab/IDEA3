@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NeuroAudio LSM — Audio Results</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; }
+    .audio-block { background: #f5f5f5; padding: 20px; margin: 20px 0; border-radius: 8px; }
+    h2 { color: #333; }
+  </style>
+</head>
+<body>
+  <h1>🧠 NeuroAudio LSM — Audio Comparison</h1>
+
+  <div class="audio-block">
+    <h2>🎙️ Input — Noisy Audio</h2>
+    <audio controls src="results/audio/original_noisy.wav"></audio>
+  </div>
+
+  <div class="audio-block">
+    <h2>✅ Output — SNN Reconstructed</h2>
+    <audio controls src="results/audio/final_reconstructed_audio.wav"></audio>
+  </div>
+
+  <div class="audio-block">
+    <h2>🎯 Reference — Clean Target</h2>
+    <audio controls src="results/audio/comp40731_target_sound.wav"></audio>
+  </div>
+</body>
+</html>
